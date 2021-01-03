@@ -21,7 +21,7 @@ const vertexRouters = require('./routes/vertex')
 const main = (require('./routes/main'))
 
 // set routes
-//app.use('/', page)
+app.use('/', page)
 app.use('/',main)
 app.use('/api', vertexRouters.api)
 app.use('/blocks', vertexRouters.blocks)
